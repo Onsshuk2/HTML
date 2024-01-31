@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .conteiner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+            
+        }
+        .text, .menu {
+            width: 100%;
+            text-align: justify;
+        }
+        hr
+        {
+            margin-bottom: 0;
+            color: rgb(42, 55, 90);
+        }
+        .table1 {
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border-collapse: separate;
+            min-width: 30%;
+            max-width: 600px;
+            margin: 30px;
+        }
+        .table2 {
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border-collapse: separate;
+            min-width: 20%;
+            max-width: 600px;
+            margin: 30px;
+        }
+        .tr {
+            color: white;
+            background-color: rgb(42, 55, 90);
+        }
+        .td {
+            color:rgb(42, 55, 90);
+            background-color: rgb(128, 152, 217);
+            text-align: left;
+            
+        }
+        
+        @media screen and (min-width: 800px) {
+            .conteiner {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .text {
+                width: 60%;
+            }
+            .menu {
+                width: 35%;
+            }
+        }
+
+        
+        @media screen and (min-width: 600px) and (max-width: 799px) {
+            .conteiner {
+                flex-direction: column;
+                align-items: center;
+            }
+            .menu {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .table1, .table2 {
+                width: 45%;
+            }
+        }
+
+        
+        @media screen and (max-width: 599px) {
+            .text, .menu {
+                width: 100%;
+            }
+            .menu {
+                flex-direction: column;
+                
+            }
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="text">
+            <h2>Introduction</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ea dolores vel veniam id? Dolores ab nihil expedita labore sint ex tempore, sed in ratione sequi. Praesentium repellendus doloremque veniam temporibus repellat, exercitationem fugiat explicabo, quaerat autem pariatur voluptas, voluptatibus minus sint nostrum dolor! Labore iste quaerat temporibus velit obcaecati qui ipsa? Architecto sint, quam enim facilis voluptatem adipisci repellat. Libero esse ipsum, officiis iure, labore debitis eius voluptates illo exercitationem accusantium cupiditate reprehenderit maiores, numquam unde. Officia, dolorum sapiente.</p>
+            <h3>Additional information</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, nemo. Iusto consequatur quibusdam distinctio, perferendis aperiam placeat! Natus fugiat reiciendis, laboriosam porro possimus soluta. Quaerat assumenda eligendi quibusdam iure! Harum magnam facilis laborum error cupiditate reiciendis explicabo expedita temporibus ipsam laboriosam sequi, quibusdam deserunt odio, fugit ex voluptate esse quod pariatur tenetur soluta aperiam alias? Ipsam modi tempora odio excepturi dignissimos quae necessitatibus deleniti nihil, earum voluptatem reprehenderit neque blanditiis tempore. Officiis vero natus autem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quia inventore tempore omnis porro nulla adipisci alias ipsa sit ab, nobis molestias in reprehenderit debitis ex officia laboriosam, est, repudiandae nam esse. Incidunt veniam quod nam ipsam cumque laborum consequuntur unde expedita, et a minus rem fuga ratione asperiores, voluptatum impedit? Ut cupiditate ducimus ea corporis iure eos, qui fugiat.</p>
+        </div>
+        <div class="menu">
+            <div class="table1">
+               <div class="tr">Actions<hr></div>
+               <div class="td">
+               <div> Eligendi, harum temporibus? Reprehenderit.<hr></div>
+               <div >Adipisci modi deserunt eos!<hr></div>
+               <div >Quaerat deleniti modi dolores.</div>
+            </div>
+        </div>
+        <div class="table2">
+            <div class="tr">Plans<hr></div>
+            <div class="td">
+            <div>Eligendi, harum temporibus? Reprehenderit.<hr></div>
+            <div>Adipisci modi deserunt eos!</div>
+            </div>
+     </div>
+    </div>
+</body>
+</html>
