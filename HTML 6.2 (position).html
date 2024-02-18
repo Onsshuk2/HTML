@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+            
+           margin: 10px;
+            
+        }
+        h3
+        {
+            padding-left:   30px;
+        }
+        img
+        {
+width: 250px;
+height: 350px;
+           border-radius: 10px;
+        }
+        .conteiner
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        figure
+        {
+            border: 1px rgb(40, 40, 87) solid;
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(40, 40, 87);
+            text-align: right;
+            
+        }
+        figcaption div
+        {
+            padding-left: 10px;
+        }
+        .conteiner-img
+        {
+            flex-grow: 1;
+        }
+        .conteiner-img img
+        {
+            width: 250px;
+height: 350px;
+        }
+        @media screen and (max-width: 600px) {
+    .conteiner
+    {
+flex-direction: column;
+    }
+     .conteiner3
+    {
+order: 2;
+    }
+    .conteiner1
+    {
+order: 1;
+    }
+    .conteiner2
+    {
+order: 3;
+    }
+    .img 
+        {
+            width: 332px;
+            height: 450px; 
+        }
+        }
+        @media (min-width: 600px) and (max-width: 800px) {
+            .conteiner
+    {
+flex-direction: column;
+    }
+     .conteiner3
+    { 
+display: flex;
+order: 2;
+
+    }
+    .conteiner1
+    {
+order: 1;
+    }
+    .conteiner2
+    {
+order: 3;
+    }
+    .img 
+        {
+            width: 332px;
+            height: 350px; 
+            margin-bottom: 100px;
+        }
+       .img img 
+        {
+            width: 100%;
+            height: 100%; 
+        }
+        }
+        @media screen and (min-width: 800px) {
+    
+    .img 
+        {
+            width: 332px;
+            height: 450px;
+        }
+        .conteiner
+        {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto auto;
+}
+.conteiner1, .conteiner2
+{
+    grid-column: 1;
+}
+.conteiner3
+{
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    
+}
+    }
+    
+    </style>
+</head>
+<body>
+    <h3>Cat</h3>
+    <div class="conteiner">
+        
+            <div class="text conteiner1"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit ratione libero deserunt, odio praesentium officia aut optio, nobis quibusdam molestias soluta necessitatibus, nihil aliquam vitae dolorum quam explicabo. Illum officia inventore dicta iusto dolorum deleniti possimus cum? Sapiente culpa impedit dolorum quos consectetur, fugiat minus magni repellendus doloribus dolorem architecto?</div>
+           
+             
+        <div class="text conteiner2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit dolores ea explicabo voluptate obcaecati minima porro excepturi ab voluptatum quidem eligendi placeat laudantium consectetur, repellendus sequi eaque molestias maiores quas ipsum aperiam dolorem. Saepe voluptas animi iusto, nesciunt architecto ea doloribus sint quae quaerat cum dicta minima asperiores quo consequuntur nulla vero itaque earum veritatis sed suscipit qui aspernatur nam mollitia. Vitae excepturi cumque neque quis ab quibusdam, maiores ipsa rem, nemo error dignissimos. Iusto qui cum fugiat sequi possimus aliquid sit tenetur ipsa et vel, maiores quas, excepturi libero saepe. Velit quis veritatis voluptate ad provident ut quibusdam rerum consequatur est incidunt magnam ullam maxime laboriosam non voluptatem, veniam laudantium eveniet! Dolore, quisquam. Ad libero placeat voluptate impedit modi excepturi ex distinctio illo ratione, accusantium obcaecati exercitationem tenetur suscipit quibusdam itaque quisquam nisi magni, error repellendus nesciunt, et expedita? Commodi repudiandae perferendis nam debitis ipsa impedit, quia voluptatum quisquam reprehenderit fugiat sint, doloremque provident veritatis enim, magni aliquam cumque. Sint id aliquid iusto soluta blanditiis possimus totam tempore quo ipsa, unde iste eveniet! Animi iste sequi aperiam vitae possimus reprehenderit eos totam! Blanditiis molestiae ducimus, optio fuga voluptatibus magnam necessitatibus! Error blanditiis, adipisci pariatur quas voluptates libero accusamus providentLorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit dolores ea explicabo voluptate obcaecati minima porro excepturi ab voluptatum quidem eligendi placeat laudantium consectetur, repellendus sequi eaque molestias maiores quas ipsum aperiam dolorem. Saepe voluptas animi iusto, nesciunt architecto ea doloribus sint quae quaerat cum dicta minima asperiores quo consequuntur nulla vero itaque earum veritatis sed suscipit qui aspernatur nam mollitia. Vitae excepturi cumque neque quis ab quibusdam, maiores ipsa rem, nemo error dignissimos. Iusto qui cum fugiat sequi possimus aliquid sit tenetur ipsa et vel, maiores quas, excepturi libero saepe. Velit quis veritatis voluptate ad provident ut quibusdam rerum consequatur est incidunt magnam ullam maxime laboriosam non voluptatem, veniam laudantium eveniet! Dolore, quisquam. Ad libero placeat voluptate impedit modi excepturi ex distinctio illo ratione, accusantium obcaecati exercitationem tenetur suscipit quibusdam itaque quisquam nisi magni, error repellendus nesciunt, et expedita? Commodi repudiandae perferendis nam debitis ipsa impedit, quia voluptatum quisquam reprehenderit fugiat sint, doloremque provident veritatis enim, magni aliquam cumque. Sint id aliquid iusto soluta blanditiis possimus totam tempore quo ipsa, unde iste eveniet! Animi iste sequi aperiam vitae possimus reprehenderit eos totam! Blanditiis molestiae ducimus, optio fuga voluptatibus magnam necessitatibus! Error blanditiis, adipisci pariatur quas voluptates libero accusamus provident</div>
+            
+    <div class="conteiner-img conteiner3">
+        <div class="img">
+            <figure><img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="cat">
+                <figcaption><div>Lorem ipsum dolor sit amet.</div></figcaption> 
+            </figure>
+        </div> 
+        <div class="img">
+            <figure><img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHx8MA%3D%3D" alt="cat">
+            <figcaption><div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptate harum officia!</div></figcaption>
+        </figure>
+        </div>
+            </div>
+           
+        
+        
+        
+    </div>
+</body>
+</html>

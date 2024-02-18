@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: rgb(205, 204,203);
+        }
+        .conteiner-header
+        {
+            display: flex;
+        }
+        .big-conteiner
+        {
+            display: flex;
+        }
+        span
+        {
+            color:rgb(119, 116, 116)
+        }
+        .mail2
+        {
+            display: flex;
+           margin-left: 80%;
+        }
+        .mail1
+        {
+            margin: 10px;
+        }
+        
+        
+@media screen and (min-width: 800px) {
+.list-conteiner
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    margin: 40px;
+    width: 100%;
+    height: 100%;
+}
+.list-conteiner div
+{
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgb(156, 155, 155);
+}
+.list3
+{
+    text-align: center;
+}
+}
+
+@media (min-width: 550px) and (max-width: 800px) {
+.list-conteiner
+{ 
+    grid-template-columns: 2fr;
+}
+.list3
+{
+    text-align: end;
+}
+.list1
+{
+    border-bottom: none;
+}
+        }
+        @media screen and (max-width: 550px) {
+.list-conteiner
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    margin: 40px;
+    width: 100%;
+    height: 100%;
+}
+.list-conteiner div
+{
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgb(156, 155, 155);
+    order: 0;
+}
+.list3
+{
+    text-align: center;
+}
+}
+img
+{
+    width: 30px;
+    height: 30px;
+}
+.img
+{
+    margin: 5px;
+}
+.my
+{
+    display: flex;
+}
+.mail
+{
+    margin: 10px;
+}
+li
+{
+    list-style-type: none ;
+    margin: 40px;
+    display: flex;
+    padding: 20px;
+}
+.icon
+{
+    margin-top: 7px;
+}
+li:hover
+{
+    background-color: rgb(211, 186, 199);
+}
+.list1:hover
+{
+    background-color: rgb(191, 191, 191);
+    
+}
+.list2:hover
+{
+    background-color: rgb(191, 191, 191);
+}
+.list3:hover
+{
+    background-color: rgb(191, 191, 191);
+}
+
+
+    </style>
+</head>
+<body>
+    <header> 
+        <div class="conteiner-header">
+            <div class="my"> <div class="img"><img src="mail.png" alt="mail"></div><div class="mail">MY MAIL</div></div>
+            <div class="mail2"><div class="img"><img src="account.png" alt="account"></div> <div class="mail1">user@mymail.com</div></div>
+        </div>
+    </header>
+    <hr>
+    <div class="big-conteiner">
+    <menu class="left">
+    <ul>
+        <li> <div><img src="incom.png" alt="incom"></div><div class="icon">Incoming</div></li>
+        <li><div><img src="outcom.png" alt="incom"></div><div class="icon">Outgoing</div></li>
+        <li><div><img src="draft.png" alt="incom"></div><div class="icon">Drafts</div></li>
+        <li><div><img src="spam.png" alt="incom"></div><div class="icon">Spam</div></li>
+    </ul>
+    </menu>
+<div class="list-conteiner">
+        
+            <div class="list list1"> <img src="star1.svg" alt="star" style="width: 15px; height: 15px; margin: 5px;">me Alex</div>
+            <div class="list list2 ">Lorem ipsum dolor, sit amet <span> consectetur adipisicing elit.</span></div>
+            <div class="list list3"><img src="attach_26.png" alt="star" style="width: 15px; height: 15px; margin: 5px;">12 apr</div>
+            <div class="list list1 "><img src="star1.svg" alt="star" style="width: 15px; height: 15px; margin: 5px;">me, John</div>
+            <div class="list list2 ">Lorem ipsum dolor sit.</div>
+            <div class="list list3"><img src="attach_26.png" alt="star" style="width: 15px; height: 15px; margin: 5px;">12 apr</div>
+            <div class="list list1"><img src="star1.svg" alt="star" style="width: 15px; height: 15px; margin: 5px;">Bill,John</div>
+            <div class="list list2">Lorem ipsum dolor<span> dolor sit amet.</span></div>
+            <div class="list list3">10 apr</div>
+            <div class="list list1"><img src="star2.svg" alt="star" style="width: 15px; height: 15px; margin: 5px;">me,John, Alex</div>
+            <div class="list list2">Lorem ipsum dolor sit</div>
+            <div class="list list3"><img src="attach_26.png" alt="star" style="width: 15px; height: 15px; margin: 5px;">10 apr</div>
+            <div class="list list1"><img src="star1.svg" alt="star" style="width: 15px; height: 15px; margin: 5px;">Mari White</div>
+            <div class="list list2">Lorem, ipsum dolor.</div>
+            <div class="list list3"><img src="attach_26.png" alt="star" style="width: 15px; height: 15px; margin: 5px;">5 apr</div>
+            <div class="list list1"><img src="star1.svg" alt="star" style="width: 15px; height: 15px; margin: 5px;">me,John, Alex</div>
+            <div class="list list2">Lorem ipsum dolor<span> dolor sit amet.</span></div>
+            <div class="list list3">11 apr</div>
+            <div class="list list1"><img src="star2.svg" alt="star" style="width: 15px; height: 15px; margin: 5px;">Bill,John</div>
+            <div class="list list2">Lorem ipsum dolor <span> sit amet consectetur adipisicing elit.</span></div>
+            <div class="list list3">5 apr</div>
+            <div class="list list1"><img src="star2.svg" alt="star" style="width: 15px; height: 15px; margin: 5px;">me Alex</div>
+            <div class="list list2">Lorem ipsum dolor<span> dolor sit amet.</span></div>
+            <div class="list list3"><img src="attach_26.png" alt="star" style="width: 15px; height: 15px; margin: 5px;">10 apr</div>
+        
+        
+   
+</div>
+ </div>
+</body>
+</html>
